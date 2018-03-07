@@ -1,0 +1,433 @@
+{
+	"tweets": [
+		{
+			"created_at": "Sat Mar 03 12:23:39 +0000 2018",
+			"id": 969911176799969280,
+			"id_str": "969911176799969280",
+			"text": "No swimming! #StormEmma #Dublin #phibsboro https://t.co/kfBH8od1xM",
+			"truncated": false,
+			"entities": {
+				"hashtags": [
+					{
+						"text": "StormEmma",
+						"indices": [
+							13,
+							23
+						]
+					},
+					{
+						"text": "Dublin",
+						"indices": [
+							24,
+							31
+						]
+					},
+					{
+						"text": "phibsboro",
+						"indices": [
+							32,
+							42
+						]
+					}
+				],
+				"symbols": [],
+				"user_mentions": [],
+				"urls": [],
+				"media": [
+					{
+						"id": 969911148253536256,
+						"id_str": "969911148253536256",
+						"indices": [
+							43,
+							66
+						],
+						"media_url": "http://pbs.twimg.com/media/DXXRDO9X4AAFI0f.jpg",
+						"media_url_https": "https://pbs.twimg.com/media/DXXRDO9X4AAFI0f.jpg",
+						"url": "https://t.co/kfBH8od1xM",
+						"display_url": "pic.twitter.com/kfBH8od1xM",
+						"expanded_url": "https://twitter.com/cto_movidius/status/969911176799969280/photo/1",
+						"type": "photo",
+						"sizes": {
+							"small": {
+								"w": 510,
+								"h": 680,
+								"resize": "fit"
+							},
+							"thumb": {
+								"w": 150,
+								"h": 150,
+								"resize": "crop"
+							},
+							"large": {
+								"w": 1536,
+								"h": 2048,
+								"resize": "fit"
+							},
+							"medium": {
+								"w": 900,
+								"h": 1200,
+								"resize": "fit"
+							}
+						}
+					}
+				]
+			},
+			"extended_entities": {
+				"media": [
+					{
+						"id": 969911148253536256,
+						"id_str": "969911148253536256",
+						"indices": [
+							43,
+							66
+						],
+						"media_url": "http://pbs.twimg.com/media/DXXRDO9X4AAFI0f.jpg",
+						"media_url_https": "https://pbs.twimg.com/media/DXXRDO9X4AAFI0f.jpg",
+						"url": "https://t.co/kfBH8od1xM",
+						"display_url": "pic.twitter.com/kfBH8od1xM",
+						"expanded_url": "https://twitter.com/cto_movidius/status/969911176799969280/photo/1",
+						"type": "photo",
+						"sizes": {
+							"small": {
+								"w": 510,
+								"h": 680,
+								"resize": "fit"
+							},
+							"thumb": {
+								"w": 150,
+								"h": 150,
+								"resize": "crop"
+							},
+							"large": {
+								"w": 1536,
+								"h": 2048,
+								"resize": "fit"
+							},
+							"medium": {
+								"w": 900,
+								"h": 1200,
+								"resize": "fit"
+							}
+						}
+					}
+				]
+			},
+			"metadata": {
+				"iso_language_code": "en",
+				"result_type": "recent"
+			},
+			"source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+			"in_reply_to_status_id": null,
+			"in_reply_to_status_id_str": null,
+			"in_reply_to_user_id": null,
+			"in_reply_to_user_id_str": null,
+			"in_reply_to_screen_name": null,
+			"user": {
+				"id": 109215470,
+				"id_str": "109215470",
+				"name": "david moloney",
+				"screen_name": "cto_movidius",
+				"location": "dublin",
+				"description": "SW is eating the world, AI is eating SW and HW is eating AI.   Personal feed, all views expressed are my own.",
+				"url": "https://t.co/LRxmky54CQ",
+				"entities": {
+					"url": {
+						"urls": [
+							{
+								"url": "https://t.co/LRxmky54CQ",
+								"expanded_url": "http://www.movidius.com",
+								"display_url": "movidius.com",
+								"indices": [
+									0,
+									23
+								]
+							}
+						]
+					},
+					"description": {
+						"urls": []
+					}
+				},
+				"protected": false,
+				"followers_count": 4037,
+				"friends_count": 3075,
+				"listed_count": 431,
+				"created_at": "Thu Jan 28 09:50:30 +0000 2010",
+				"favourites_count": 13248,
+				"utc_offset": 0,
+				"time_zone": "Dublin",
+				"geo_enabled": true,
+				"verified": false,
+				"statuses_count": 23138,
+				"lang": "en",
+				"contributors_enabled": false,
+				"is_translator": false,
+				"is_translation_enabled": false,
+				"profile_background_color": "0099B9",
+				"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/669832950/da0260bea9ceafd4860206cfff213342.jpeg",
+				"profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/669832950/da0260bea9ceafd4860206cfff213342.jpeg",
+				"profile_background_tile": true,
+				"profile_image_url": "http://pbs.twimg.com/profile_images/948874117322805248/ElJGd2AE_normal.jpg",
+				"profile_image_url_https": "https://pbs.twimg.com/profile_images/948874117322805248/ElJGd2AE_normal.jpg",
+				"profile_banner_url": "https://pbs.twimg.com/profile_banners/109215470/1493200160",
+				"profile_link_color": "981CEB",
+				"profile_sidebar_border_color": "FFFFFF",
+				"profile_sidebar_fill_color": "95E8EC",
+				"profile_text_color": "3C3940",
+				"profile_use_background_image": true,
+				"has_extended_profile": false,
+				"default_profile": false,
+				"default_profile_image": false,
+				"following": null,
+				"follow_request_sent": null,
+				"notifications": null,
+				"translator_type": "none"
+			},
+			"geo": null,
+			"coordinates": null,
+			"place": null,
+			"contributors": null,
+			"is_quote_status": false,
+			"retweet_count": 0,
+			"favorite_count": 0,
+			"favorited": false,
+			"retweeted": false,
+			"possibly_sensitive": false,
+			"lang": "en"
+		},
+		{
+			"created_at": "Sat Mar 03 12:23:36 +0000 2018",
+			"id": 969911167207473152,
+			"id_str": "969911167207473152",
+			"text": "I think my polytunnel is under a bit of pressure. #StormEmma &amp; #BeastFromTheEast have it straining. The good news i\u2026 https://t.co/q7r3NSACw7",
+			"truncated": true,
+			"entities": {
+				"hashtags": [
+					{
+						"text": "StormEmma",
+						"indices": [
+							50,
+							60
+						]
+					},
+					{
+						"text": "BeastFromTheEast",
+						"indices": [
+							67,
+							84
+						]
+					}
+				],
+				"symbols": [],
+				"user_mentions": [],
+				"urls": [
+					{
+						"url": "https://t.co/q7r3NSACw7",
+						"expanded_url": "https://twitter.com/i/web/status/969911167207473152",
+						"display_url": "twitter.com/i/web/status/9\u2026",
+						"indices": [
+							121,
+							144
+						]
+					}
+				]
+			},
+			"metadata": {
+				"iso_language_code": "en",
+				"result_type": "recent"
+			},
+			"source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+			"in_reply_to_status_id": null,
+			"in_reply_to_status_id_str": null,
+			"in_reply_to_user_id": null,
+			"in_reply_to_user_id_str": null,
+			"in_reply_to_screen_name": null,
+			"user": {
+				"id": 539387387,
+				"id_str": "539387387",
+				"name": "Pot Still Will \ud83e\udd43+\ud83c\udf7a",
+				"screen_name": "PotStillWhiskey",
+				"location": "Wexford",
+				"description": "Irish Whiskey enthusiast. @IBDHQ GCD & GCB. In search of great spirits & craft beer. Visit my Facebook page at https://t.co/wONqBLmT4J",
+				"url": null,
+				"entities": {
+					"description": {
+						"urls": [
+							{
+								"url": "https://t.co/wONqBLmT4J",
+								"expanded_url": "https://m.facebook.com/potstillwhiskey/",
+								"display_url": "m.facebook.com/potstillwhiske\u2026",
+								"indices": [
+									111,
+									134
+								]
+							}
+						]
+					}
+				},
+				"protected": false,
+				"followers_count": 1926,
+				"friends_count": 1037,
+				"listed_count": 26,
+				"created_at": "Wed Mar 28 21:07:53 +0000 2012",
+				"favourites_count": 3620,
+				"utc_offset": null,
+				"time_zone": null,
+				"geo_enabled": true,
+				"verified": false,
+				"statuses_count": 1456,
+				"lang": "en",
+				"contributors_enabled": false,
+				"is_translator": false,
+				"is_translation_enabled": false,
+				"profile_background_color": "000000",
+				"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+				"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+				"profile_background_tile": false,
+				"profile_image_url": "http://pbs.twimg.com/profile_images/951106366156001280/AS-1eFTQ_normal.jpg",
+				"profile_image_url_https": "https://pbs.twimg.com/profile_images/951106366156001280/AS-1eFTQ_normal.jpg",
+				"profile_banner_url": "https://pbs.twimg.com/profile_banners/539387387/1515596404",
+				"profile_link_color": "FFCC4D",
+				"profile_sidebar_border_color": "000000",
+				"profile_sidebar_fill_color": "000000",
+				"profile_text_color": "000000",
+				"profile_use_background_image": false,
+				"has_extended_profile": false,
+				"default_profile": false,
+				"default_profile_image": false,
+				"following": null,
+				"follow_request_sent": null,
+				"notifications": null,
+				"translator_type": "none"
+			},
+			"geo": null,
+			"coordinates": null,
+			"place": null,
+			"contributors": null,
+			"is_quote_status": false,
+			"retweet_count": 0,
+			"favorite_count": 0,
+			"favorited": false,
+			"retweeted": false,
+			"possibly_sensitive": false,
+			"lang": "en"
+		},
+		{
+			"created_at": "Sat Jan 03 12:23:36 +0000 2018",
+			"id": 969911167207473155,
+			"id_str": "969911167207473152",
+			"text": "FAKE TWEET  polytunnel is under a bit of pressure. #StormEmma &amp; #BeastFromTheEast have it straining. The good news i\u2026 https://t.co/q7r3NSACw7",
+			"truncated": true,
+			"entities": {
+				"hashtags": [
+					{
+						"text": "StormEmma",
+						"indices": [
+							50,
+							60
+						]
+					},
+					{
+						"text": "BeastFromTheEast",
+						"indices": [
+							67,
+							84
+						]
+					}
+				],
+				"symbols": [],
+				"user_mentions": [],
+				"urls": [
+					{
+						"url": "https://t.co/q7r3NSACw7",
+						"expanded_url": "https://twitter.com/i/web/status/969911167207473152",
+						"display_url": "twitter.com/i/web/status/9\u2026",
+						"indices": [
+							121,
+							144
+						]
+					}
+				]
+			},
+			"metadata": {
+				"iso_language_code": "en",
+				"result_type": "recent"
+			},
+			"source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+			"in_reply_to_status_id": null,
+			"in_reply_to_status_id_str": null,
+			"in_reply_to_user_id": null,
+			"in_reply_to_user_id_str": null,
+			"in_reply_to_screen_name": null,
+			"user": {
+				"id": 539387387,
+				"id_str": "539387387",
+				"name": "Pot Still Will \ud83e\udd43+\ud83c\udf7a",
+				"screen_name": "PotStillWhiskey",
+				"location": "Wexford",
+				"description": "Irish Whiskey enthusiast. @IBDHQ GCD & GCB. In search of great spirits & craft beer. Visit my Facebook page at https://t.co/wONqBLmT4J",
+				"url": null,
+				"entities": {
+					"description": {
+						"urls": [
+							{
+								"url": "https://t.co/wONqBLmT4J",
+								"expanded_url": "https://m.facebook.com/potstillwhiskey/",
+								"display_url": "m.facebook.com/potstillwhiske\u2026",
+								"indices": [
+									111,
+									134
+								]
+							}
+						]
+					}
+				},
+				"protected": false,
+				"followers_count": 1926,
+				"friends_count": 1037,
+				"listed_count": 26,
+				"created_at": "Wed Mar 28 21:07:53 +0000 2012",
+				"favourites_count": 3620,
+				"utc_offset": null,
+				"time_zone": null,
+				"geo_enabled": true,
+				"verified": false,
+				"statuses_count": 1456,
+				"lang": "en",
+				"contributors_enabled": false,
+				"is_translator": false,
+				"is_translation_enabled": false,
+				"profile_background_color": "000000",
+				"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+				"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+				"profile_background_tile": false,
+				"profile_image_url": "http://pbs.twimg.com/profile_images/951106366156001280/AS-1eFTQ_normal.jpg",
+				"profile_image_url_https": "https://pbs.twimg.com/profile_images/951106366156001280/AS-1eFTQ_normal.jpg",
+				"profile_banner_url": "https://pbs.twimg.com/profile_banners/539387387/1515596404",
+				"profile_link_color": "FFCC4D",
+				"profile_sidebar_border_color": "000000",
+				"profile_sidebar_fill_color": "000000",
+				"profile_text_color": "000000",
+				"profile_use_background_image": false,
+				"has_extended_profile": false,
+				"default_profile": false,
+				"default_profile_image": false,
+				"following": null,
+				"follow_request_sent": null,
+				"notifications": null,
+				"translator_type": "none"
+			},
+			"geo": null,
+			"coordinates": null,
+			"place": null,
+			"contributors": null,
+			"is_quote_status": false,
+			"retweet_count": 0,
+			"favorite_count": 0,
+			"favorited": false,
+			"retweeted": false,
+			"possibly_sensitive": false,
+			"lang": "en"
+		}
+	]
+}
