@@ -87,7 +87,7 @@
   <script src="scripts/vendor/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
-  <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+
   <script src="scripts/vendor/underscore-min.js"></script>
 
   <script src="scripts/03_main.js"></script>
@@ -108,197 +108,50 @@
 
 
       //Display overview of signups -START
-      $.get('data/tweets_emma.json', function (data) {
+      $.get('data/data.json', function (data) {
 
         console.log(data);
-        //console.log(data.tweets[0].created_at);
-        var selected_tweets = '{"selected_tweets": [';
-        var tweet_date;
-        var months = ["Jan", "Feb", "Mar"];
-        var startDate = new Date('02/26/2018');
-        var endDate = new Date('03/04/2018');
-        var report_days = ['26-Feb', '27-Feb', '28-Feb', '01-Mar', '02-Mar', '03-Mar'];
-        var dictReportVariables = {};
-        var dictHashtags = {};
-        var dictUserMentions = {}
-        var dictRetweets = {}
-        var shortTweetDate;
-        debugger;
-        for (var i = data.tweets.length - 1; i > -1; i--) {
-          // tweet_date = new Date(data.tweets[i].created_at);
-          // //if(tweet_date >= startDate && tweet_date <= endDate){
-          // shortTweetDate = tweet_date.getDate() + '-' + months[tweet_date.getMonth()];
-          // selected_tweets += '{"created_at":"' + shortTweetDate + '"},';
-          // if (dictReportVariables[shortTweetDate] == null) {
-          //   dictReportVariables[shortTweetDate] = 1;
-          // }
-          // else {
-          //   dictReportVariables[shortTweetDate] += 1;
-          // }
-          ///////////////// Hashtags Extraction - START /////////////////////////////////////////////
-          for (var k = 0; k < data.tweets[i].entities.hashtags.length; k++) {
-            if (dictHashtags[data.tweets[i].entities.hashtags[k].text] == null) {
-              dictHashtags[data.tweets[i].entities.hashtags[k].text] = 1;
-            }
-            else {
-              dictHashtags[data.tweets[i].entities.hashtags[k].text] += 1;
-            }
-          }
-          ///////////////// Hashtags Extraction - END /////////////////////////////////////////////
 
-          ///////////////// User Mentions - START /////////////////////////////////////////////
-          for (var k = 0; k < data.tweets[i].entities.user_mentions.length; k++) {
-            if (dictUserMentions[data.tweets[i].entities.user_mentions[k].name] == null) {
-              dictUserMentions[data.tweets[i].entities.user_mentions[k].name] = 1;
-            }
-            else {
-              dictUserMentions[data.tweets[i].entities.user_mentions[k].name] += 1;
-            }
-          }
-          ///////////////// User Mentions - END /////////////////////////////////////////////
-
-          ///////////////// Retweets - START /////////////////////////////////////////////
-          if (data.tweets[i].text.startsWith('RT ')) {
-            if (data.tweets[i].retweeted_status != null) {
-              var originalTweetId = data.tweets[i].retweeted_status.id_str
-              if (dictRetweets[originalTweetId] == null) {
-                dictRetweets[originalTweetId] = 1;
+        Highcharts.chart('weekly-series-chart',
+          {
+            chart: {
+              type: 'column'
+            },
+            title: {
+              text: 'Overview of Signups'
+            },
+            subtitle: {
+              text: 'Source: data.json'
+            },
+            yAxis: {
+              title: {
+                text: 'Sales'
               }
-              else {
-                dictRetweets[originalTweetId] += 1;
-              }
+            },
+            xAxis: {
+              title: {
+                text: 'Days of the week'
+              },
+              categories: data.weekly_sales.days
+            },
+            tooltip: {
+              headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+              pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+              useHTML: true
+            },
+            legend: {
+              enabled: true
+            },
+
+            series: data.weekly_sales.plan_signups,
+            credits: {
+              enabled: false
             }
 
-          }
-          ///////////////// Retweets - END /////////////////////////////////////////////
-
-        }
-        function sortProperties(obj) {
-          // convert object into array
-          var sortable = [];
-          for (var key in obj)
-            if (obj.hasOwnProperty(key))
-              sortable.push([key, obj[key]]); // each item is an array in format [key, value]
-
-          // sort items by value
-          sortable.sort(function (a, b) {
-            return b[1] - a[1]; // compare numbers
           });
-          return sortable; // array in format [ [ key1, val1 ], [ key2, val2 ], ... ]
-        }
-
-        selected_tweets = selected_tweets.slice(0, -1)
-        selected_tweets += ']}'
-        var JSON_tweets = JSON.parse(selected_tweets);
-        console.log(JSON_tweets);
-        console.log(dictReportVariables);
-        debugger;
-
-
-        ///////////////// Hashtags - Plotting /////////////////////////////////////////////
-
-        sortedHashtags = sortProperties(dictHashtags);
-        var wordCloudData = []
-        for (var m = 0; m < 20; m++) {
-          wordCloudData.push({
-            name: sortedHashtags[m][0],
-            weight: sortedHashtags[m][1]
-          })
-        }
-        console.log(sortedHashtags.slice(0, 100));
-        console.log(wordCloudData);
-
-        Highcharts.chart('weekly-series-chart', {
-          series: [{
-            type: 'wordcloud',
-            data: wordCloudData.slice(3, 19),
-            name: 'Occurrences'
-          }],
-          title: {
-            text: 'Wordcloud of popular hashtags'
-          }
-        });
-        //////////////////////////////////////////////////////////////////////////////////////
-
-        ///////////////////////  Plotting: User Mentions ////////////////////////////////////////
-        sortedUserMentions = sortProperties(dictUserMentions);
-        console.log(sortedUserMentions.slice(0, 20));
-
-        //////////////////////////////////////////////////////////////////////////////////
-
-        ///////////////////////  Plotting: Retweets //////////////////////////////////////////////
-        sortedRetweets = sortProperties(dictRetweets);
-        var topRetweets = sortedRetweets.slice(0, 5);
-        console.log(sortedRetweets);
-        //Find original tweet text and user
-        var found = [];
-        
-        var dictRetweetsCountWithUser = {};
-        var listretweetsCountWithUser = []
-        for (var r = 0; r < topRetweets.length; r++) {
-          for (var i = data.tweets.length - 1; i > -1; i--) {
-
-            if (data.tweets[i].retweeted_status != null) {
-              // if (!($.inArray(topRetweets[r][0], found))) {
-              if (topRetweets[r][0] == data.tweets[i].retweeted_status.id_str) {
-                var retweetsCountWithUser = {};
-                //retweetsCountWithUser['id'] = topRetweets[r][0];
-                retweetsCountWithUser['tweet'] = data.tweets[i].retweeted_status.text;
-                retweetsCountWithUser['user'] = data.tweets[i].retweeted_status.user.name;
-                retweetsCountWithUser['retweetCount'] = topRetweets[r][1];
-                dictRetweetsCountWithUser[topRetweets[r][0]] = retweetsCountWithUser;
-                // found.push(topRetweets[r][0]);
-              }
-              //}
-
-            }
-
-          }
-
-        }
-        console.log(dictRetweetsCountWithUser);
-        //////////////////////////////////////////////////////////////////////////////////
-
-        // Highcharts.chart('weekly-series-chart',
-        //   {
-        //     chart: {
-        //       type: 'column'
-        //     },
-        //     title: {
-        //       text: 'Overview of Signups'
-        //     },
-        //     subtitle: {
-        //       text: 'Source: data.json'
-        //     },
-        //     yAxis: {
-        //       title: {
-        //         text: 'Sales'
-        //       }
-        //     },
-        //     xAxis: {
-        //       title: {
-        //         text: 'Days of the week'
-        //       },
-        //       categories: data.weekly_sales.days
-        //     },
-        //     tooltip: {
-        //       headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        //       pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-        //         '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-        //       footerFormat: '</table>',
-        //       shared: true,
-        //       useHTML: true
-        //     },
-        //     legend: {
-        //       enabled: true
-        //     },
-
-        //     series: data.weekly_sales.plan_signups,
-        //     credits: {
-        //       enabled: false
-        //     }
-
-        //   });
 
 
       });
