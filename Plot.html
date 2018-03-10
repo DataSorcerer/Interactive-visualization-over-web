@@ -178,7 +178,29 @@
                     }
                 ]
             };
-            L.geoJSON(tweetData).addTo(map);
+            //L.geoJSON(tweetData).addTo(map);
+
+            $.getJSON('data/testGeoJSON.json', function (data) {
+
+                console.log(data);
+
+                geojson = L.geoJSON(data, {
+                    ////////////////////////////////
+                    ///  Step 1 - look of the layer
+                    ////////////////////////////////
+                    style: {
+                        color: '#fff',
+                        weight: 1,
+                        fillColor: '#0D6759',
+                        fillOpacity: 1
+                    },
+                    ////////////////////////////////
+                    ///  Step 2 - interaction
+                    ////////////////////////////////
+                    // ,
+                    onEachFeature: onEachFeature
+                }).addTo(map);
+            });
 
 
             // function highlightLayer(e)
@@ -202,9 +224,12 @@
             // }
 
 
-            // function onEachFeature(feature, layer) {
-            //     console.log(feature);
-            //     console.log(layer);
+            function onEachFeature(feature, layer) {
+                console.log(feature);
+                console.log(layer);
+                var popUpContent = '<strong>' + feature.properties.name + '</strong>';
+                layer.bindPopup(popUpContent);
+            }
 
             // layer.on({            
             //     mouseover: highlightLayer,                
@@ -213,9 +238,9 @@
 
             ////////////////////////////////
             ///  Step 2 - add a popup
-            ////////////////////////////////
-            //     var popUpContent = '<strong>' + feature.properties.EDNAME + '</strong><br/><span class="text-muted">% Vacant 2011: ' + feature.properties.PCVAC2011 + '</span>';
-            //     layer.bindPopup(popUpContent);  
+            // ////////////////////////////////
+            // var popUpContent = '<strong>' + feature.properties.Nane + '</strong>';
+            // L.bindPopup(popUpContent);
 
         });
 
