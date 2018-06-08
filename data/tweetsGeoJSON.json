@@ -1,0 +1,117 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.2602732,
+                    53.3497645
+                    
+                ]
+            },
+            "properties": {
+                "name": "Dublin City"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    
+                    -7.9794599,
+                    52.865196
+                ]
+            },
+            "properties": {
+                "name": "Ireland"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    
+                    -6.40734708789517,
+                    53.27367045
+                ]
+            },
+            "properties": {
+                "name": "South Dublin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4705806,
+                    51.8979282
+                    
+                ]
+            },
+            "properties": {
+                "name": "Cork"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.96439612333127,
+                    52.5050033
+                    
+                ]
+            },
+            "properties": {
+                "name": "West Midlands"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.2602732,
+                    53.3497645
+                    
+                ]
+            },
+            "properties": {
+                "name": "Dublin City"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.81841756609764,
+                    53.15436455
+                    
+                ]
+            },
+            "properties": {
+                "name": "Kildare"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.6301239,
+                    52.661252
+                    
+                ]
+            },
+            "properties": {
+                "name": "Limerick"
+            }
+        }
+    ]
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/vendor/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+    <script src="scripts/vendor/underscore-min.js"></script>
+
+
+
+
+    <script src="scripts/main.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        .jumbotron {
+            margin-bottom: 0;
+            max-height: 100px;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+
+            cdcds
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Modal: Food Supply Charts: START -->
+        <div class="modal fade" id="foodModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="min-width:700px;min-height:460px;">
+                    <div class="modal-header">
+
+                        <h4 class="modal-title">Trending food items</h4>
+                    </div>
+                    <div class="modal-body" style="min-width:690px;min-height:450px;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="food-stocks"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal: Food Supply Charts: END -->
+        <!-- Modal: Popular Hashtags: START -->
+        <div class="modal fade" id="hashtagsModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="min-width:700px;min-height:460px;">
+                    <div class="modal-header">
+
+                        <h4 class="modal-title">Popular hashtags</h4>
+                    </div>
+                    <div class="modal-body" style="min-width:690px;min-height:450px;">
+                        <div class="card">
+                            <div style="width: 600px; margin-left:20px; margin-top:10px;">
+                                <p>Select from 50 top ranked hashtags: </p>
+
+                                <div id="slider-range" style="width: 300px; margin-left:20px; float:left; margin-top:7px;"></div>
+                                <label style="border:0; color:#f6931f; font-weight:bold; margin-left:10px;">Rank:</label>
+                                <label id="tagRanks" style="border:0; color:#f6931f; font-weight:bold; margin-left:10px;"></label>
+                            </div>
+                            <div class="card-body">
+                                <div id="hashtags-wordcloud" style="border-style: solid;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal: Popular Hashtags: END -->
+
+        <!-- Modal: Locate Top Tweets: START -->
+        <div class="modal fade" id="locateModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="min-width:700px;min-height:460px;">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Locations of 20 most favourite tweets</h4>
+                    </div>
+                    <div class="modal-body" style="min-width:690px;min-height:450px;">
+                        <div class="card">
+                            <div class="card-body">
+
+
+                                <div id="map-holder" style="min-height: 400px; min-width: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal: Locate Top Tweets: END -->
+
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Trending Food demands</div>
+                    <div class="panel-body">
+                        <img src="images/fooditemschart.jpg" data-toggle="modal" data-target="#foodModal" class="img-responsive" style="width:100%;cursor: pointer;"
+                            alt="Trending food topics" title="Click to view details">
+                    </div>
+                    <!-- <div class="panel-footer">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#foodModal">View Details</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Popular Hashtags</div>
+                    <div class="panel-body">
+                        <img src="images/fooditemschart.jpg" data-toggle="modal" data-target="#hashtagsModal" class="img-responsive" style="width:100%;cursor: pointer;"
+                            alt="Watch top ranking hashtags" title="Click to view details">
+                    </div>
+                    <div class="panel-footer">Watch top ranking hashtags</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Favourite Tweets</div>
+                    <div class="panel-body">
+                        <img src="images/fooditemschart.jpg" data-toggle="modal" data-target="#locateModal" class="img-responsive" style="width:100%;cursor: pointer;"
+                            alt="Locate top 20 favorite tweets" title="Click to view details">
+                    </div>
+                    <div class="panel-footer">Locate top 20 favorite tweets</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                    <div class="panel-body">
+                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                    <div class="panel-body">
+                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                    <div class="panel-body">
+                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <footer class="container-fluid text-center">
+        <p>Online Store Copyright</p>
+        <form class="form-inline">Get deals:
+            <input type="email" class="form-control" size="50" placeholder="Email Address">
+            <button type="button" class="btn btn-danger">Sign Up</button>
+        </form>
+    </footer>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+</body>
+
+</html>

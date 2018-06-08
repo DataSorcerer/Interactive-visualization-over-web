@@ -1,0 +1,341 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.2435817,
+                    55.856656
+                ]
+            },
+            "properties": {
+                "text": "#snowday3 Ooh &amp; some milk https://t.co/bp43THBRaj",
+                "location": "Glasgow",
+                "favorite_count": 1255,
+                "created_at": "Fri Mar 02 12:24:24 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.40734708789517,
+                    53.27367045
+                ]
+            },
+            "properties": {
+                "text": "If you\u2019re going to share or like or comment about one tweet on #Tallaght today, make it this one. Hospital staff we\u2026 https://t.co/BXcvRxBBMV",
+                "location": "South Dublin",
+                "favorite_count": 135,
+                "created_at": "Sat Mar 03 07:36:58 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.40734708789517,
+                    53.27367045
+                ]
+            },
+            "properties": {
+                "text": "The downgrading of the weather warning has prompted our 7-year-old to ask if we can \u201ckeep some snow in the freezer\u201d\u2026 https://t.co/ydadIRd2Rr",
+                "location": "South Dublin",
+                "favorite_count": 105,
+                "created_at": "Sat Mar 03 08:03:18 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.7539836,
+                    51.2918693
+                ]
+            },
+            "properties": {
+                "text": "The recovery/emergency services have enough to do without dealing with stupid people who, despite the warnings stil\u2026 https://t.co/fBYELmKaYD",
+                "location": "Farnborough",
+                "favorite_count": 71,
+                "created_at": "Fri Mar 02 16:45:52 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.51746902255494,
+                    52.14540645
+                ]
+            },
+            "properties": {
+                "text": "#StormEmma #killarney Red Stags foraging after a heavy #snowday3 in Killarney National Park today https://t.co/Noeuil4ZAX",
+                "location": "Kerry",
+                "favorite_count": 64,
+                "created_at": "Fri Mar 02 13:34:20 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4705806,
+                    51.8979282
+                ]
+            },
+            "properties": {
+                "text": "Huge thanks to @defenceforces Army snow ploughs clearing access to @CorkCityFire station #StormEmma\u2026 https://t.co/NTYoJUINmn",
+                "location": "Cork",
+                "favorite_count": 46,
+                "created_at": "Sat Mar 03 10:43:35 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.780828,
+                    53.6082445
+                ]
+            },
+            "properties": {
+                "text": "#snowday3 and I\u2019m making the most of testing our new winter blanky \ud83d\udc97 it\u2019s not so bad this #SNOWMAGGEDON \u2744\ufe0f\ud83d\ude3b\u2744\ufe0f\u2026 https://t.co/n45M46NB9U",
+                "location": "Honley",
+                "favorite_count": 43,
+                "created_at": "Fri Mar 02 19:32:49 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.7842204,
+                    55.9992349
+                ]
+            },
+            "properties": {
+                "text": "@xsandiixx #snowday3 #SNOWMAGGEDON #winelover https://t.co/IYM48RvyJ0",
+                "location": "Falkirk",
+                "favorite_count": 40,
+                "created_at": "Fri Mar 02 14:15:28 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.3001503,
+                    44.9139652
+                ]
+            },
+            "properties": {
+                "text": "Massive shout out to the amazing caregivers / doctors / nurses / police / road gritters and everyone else out there\u2026 https://t.co/rJvGHBodsP",
+                "location": "South West",
+                "favorite_count": 31,
+                "created_at": "Fri Mar 02 13:44:59 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.4797543,
+                    53.7497193
+                ]
+            },
+            "properties": {
+                "text": "A week where the #weather has had the top spot on the news #TheBeastFromTheEast #StormEmma #Northumberland\u2026 https://t.co/JUbLSeliQn",
+                "location": "Blackburn",
+                "favorite_count": 29,
+                "created_at": "Sat Mar 03 11:13:00 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.20486547060142,
+                    53.2567211
+                ]
+            },
+            "properties": {
+                "text": "There's always an upside!\n\n#BeastFromTheEast dublin \n#BeastFaeTheEast \n#StormEmma dublin https://t.co/brqUmUCz1A",
+                "location": "Dun Laoghaire-Rathdown",
+                "favorite_count": 24,
+                "created_at": "Sat Mar 03 09:40:51 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.3001503,
+                    44.9139652
+                ]
+            },
+            "properties": {
+                "text": "Waiting for @GalaxyThiefBand to drop a HUGE video 7pm tonight #snowday3 #FridayFeeling #NewMusicFriday #StreamMoney\u2026 https://t.co/wsBib0dQ1I",
+                "location": "South West",
+                "favorite_count": 24,
+                "created_at": "Fri Mar 02 15:54:28 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.22498020932367,
+                    53.49422125
+                ]
+            },
+            "properties": {
+                "text": "Additional crews have moved into designated areas across the county to grit and clear pedestrian areas in towns and\u2026 https://t.co/wKAo8caedU",
+                "location": "Fingal",
+                "favorite_count": 24,
+                "created_at": "Sat Mar 03 09:49:02 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.291035,
+                    51.8122786
+                ]
+            },
+            "properties": {
+                "text": "Did it really snow if you didn\u2019t have a photoshoot \u26c4\ufe0f\u2744\ufe0f#snowday3 https://t.co/0SwSt0f6i2",
+                "location": "Wheathampstead",
+                "favorite_count": 23,
+                "created_at": "Fri Mar 02 17:42:25 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.1119081,
+                    52.2609997
+                ]
+            },
+            "properties": {
+                "text": "Rescue 117 in action yesterday, lifting on a call from Waterford Airport to Wexford, footage compliments of\u2026 https://t.co/UqQrLUirHN",
+                "location": "Waterford",
+                "favorite_count": 22,
+                "created_at": "Sat Mar 03 10:59:46 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4705806,
+                    51.8979282
+                ]
+            },
+            "properties": {
+                "text": "Low lying ares in #Cork City had some pond flooding this morning  but it has now passed without major incident\u2026 https://t.co/Khh3PMxj1k",
+                "location": "Cork",
+                "favorite_count": 20,
+                "created_at": "Sat Mar 03 09:12:23 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.81841756609764,
+                    53.15436455
+                ]
+            },
+            "properties": {
+                "text": "Over the course of #StormEmma we welcomed 14 foals into the world #welldoneteam #theshowmustgoon #dedication\u2026 https://t.co/rJrlEQsOry",
+                "location": "Kildare",
+                "favorite_count": 20,
+                "created_at": "Sat Mar 03 11:29:41 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.2435817,
+                    55.856656
+                ]
+            },
+            "properties": {
+                "text": "Nothing says #snowday3 like a #GCU student selfie. Thanks to Belgian exchange student Silke Vandenborre for sharing\u2026 https://t.co/AQ2ip1SrwN",
+                "location": "Glasgow",
+                "favorite_count": 19,
+                "created_at": "Fri Mar 02 11:40:11 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.2602732,
+                    53.3497645
+                ]
+            },
+            "properties": {
+                "text": "The shops are all shut. But the pubs? Hell yes, they\u2019re open. \u2764\ufe0f \ud83d\ude0a #snowday3 #sneachta #BeastoftheEast #irelandsnow https://t.co/1tUoFCrP4M",
+                "location": "Dublin City",
+                "favorite_count": 19,
+                "created_at": "Fri Mar 02 21:11:01 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.2602732,
+                    53.3497645
+                ]
+            },
+            "properties": {
+                "text": "Delighted to report that Galway city services will resume at 9am \ud83d\ude4c\ud83c\udffb \ud83d\ude8c\ud83d\ude8c @Galwaybayfmnews @rtenews #stormemma #SNOWMAGGEDDON #sneachta",
+                "location": "Dublin City",
+                "favorite_count": 18,
+                "created_at": "Sat Mar 03 08:44:59 +0000 2018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.9797285,
+                    53.7293672
+                ]
+            },
+            "properties": {
+                "text": "Currently at an emergency kids disco at #mytholmroyd community centre, while about 1 child is actually dancing and\u2026 https://t.co/ZWzbhYgP8e",
+                "location": "Mytholmroyd",
+                "favorite_count": 17,
+                "created_at": "Fri Mar 02 15:41:00 +0000 2018"
+            }
+        }
+    ]
+}

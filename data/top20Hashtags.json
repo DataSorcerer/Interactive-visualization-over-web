@@ -1,0 +1,66 @@
+[
+    {
+        "name": "FridayFeeling",
+        "weight": 602
+    },
+    {
+        "name": "snow",
+        "weight": 548
+    },
+    {
+        "name": "uksnow",
+        "weight": 345
+    },
+    {
+        "name": "sneachta",
+        "weight": 310
+    },
+    {
+        "name": "fairplay",
+        "weight": 151
+    },
+    {
+        "name": "STEMGlasgow",
+        "weight": 130
+    },
+    {
+        "name": "salt",
+        "weight": 113
+    },
+    {
+        "name": "gritting",
+        "weight": 112
+    },
+    {
+        "name": "RoadtoBrexit",
+        "weight": 101
+    },
+    {
+        "name": "Snow",
+        "weight": 84
+    },
+    {
+        "name": "Dublin",
+        "weight": 76
+    },
+    {
+        "name": "Cork",
+        "weight": 65
+    },
+    {
+        "name": "FreezingRain",
+        "weight": 59
+    },
+    {
+        "name": "CamUTD",
+        "weight": 56
+    },
+    {
+        "name": "citywest",
+        "weight": 55
+    },
+    {
+        "name": "snowdrift",
+        "weight": 54
+    }
+]

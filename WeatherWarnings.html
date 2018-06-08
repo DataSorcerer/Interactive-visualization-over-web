@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <title>Twitter Analytics</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-sm-4">
+        <div class="card bg-light">
+          <div class="card-header">Sections</div>
+          <div class="card-body">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Report Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FavouriteTweets.html">Top favourite tweets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="WeatherWarnings.html">Weather warnings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PopularHashtags.html">Popular Hashtags</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FoodStocks.html">Food Stocks</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h3>Tracking weather warnings issued in UK</h3>
+          </div>
+          <p style="margin-left:20px;"><i>Watch daily warnings issued by
+             <a href="https://twitter.com/metofficeuk?lang=en">Met Office UK</a> on its twitter handle</i></p>
+          <div style="width: 600px; margin-left:20px; margin-top:10px;">
+            
+            <input id="btnPlay" type="button" value="Play" style="float:left;" />
+
+            <div id="slider" style="width: 300px; margin-left:20px; float:left; margin-top:7px;"></div>
+            <label style="border:0; color:#f6931f; font-weight:bold; margin-left:10px;">Date:</label>
+            <label id="date" style="border:0; color:#f6931f; font-weight:bold; margin-left:10px;"></label>
+          </div>
+
+
+
+          <div class="card-body">
+            <div id="weather-UK" style="min-height: 400px; min-width: 300px"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="scripts/vendor/jquery.min.js"></script> -->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin=""></script>
+
+  <script src="scripts/vendor/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+  <script src="scripts/vendor/underscore-min.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

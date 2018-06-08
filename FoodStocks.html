@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Twitter Analytics</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <div class="card bg-light">
+                    <div class="card-header">Sections</div>
+                    <div class="card-body">
+                        <ul class="nav nav-pills flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Report Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="FavouriteTweets.html">Top favourite tweets</a>
+                          </li> 
+                          <li class="nav-item">
+                            <a class="nav-link" href="WeatherWarnings.html">Weather warnings</a>
+                          </li> 
+                          <li class="nav-item">
+                            <a class="nav-link" href="PopularHashtags.html">Popular Hashtags</a>
+                          </li>  
+                          <li class="nav-item">
+                            <a class="nav-link" href="FoodStocks.html">Food Stocks</a>
+                          </li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Twitter reflects demand for popular food items</h3>
+                </div>
+                <div class="card-body">
+                  <div id="food-stocks"></div>
+                </div>
+              </div>
+              </div>
+
+            </div>
+        </div>
+    </div>  
+
+    <script src="scripts/vendor/jquery.min.js"></script>
+  
+    <script src="scripts/vendor/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+    <script src="scripts/vendor/underscore-min.js"></script>
+  
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
